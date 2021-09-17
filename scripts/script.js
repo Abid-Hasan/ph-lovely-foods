@@ -8,8 +8,8 @@ document.getElementById("search-button").addEventListener("click", () => {
     searchInput.value = "";
 });
 
-const searchFoods = (foods) => {
-    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foods}`;
+const searchFoods = (foodName) => {
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foodName}`;
     fetch(url)
         .then(response => response.json())
         .then(json => displayFoods(json.meals));
