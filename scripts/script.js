@@ -1,5 +1,9 @@
 document.getElementById("search-button").addEventListener("click", () => {
     const searchInput = document.getElementById("search-input");
+    if (searchInput.value == "") {
+        showMessage("Write something in the search box first.");
+        return;
+    }
     searchFoods(searchInput.value);
     searchInput.value = "";
 });
@@ -15,7 +19,10 @@ const displayFoods = (foods) => {
     const foodDisplay = document.getElementById("food-display");
     foodDisplay.innerHTML = "";
 
-    if (foods == null) return;
+    if (foods == null) {
+        showMessage("No item is found. Try with a different keyword.");
+        return;
+    }
 
     foods.forEach(food => {
         const div = document.createElement("div");
@@ -31,4 +38,13 @@ const displayFoods = (foods) => {
         `;
         foodDisplay.appendChild(div);
     });
+};
+
+const showMessage = message => {
+    const foodDisplay = document.getElementById("food-display");
+    foodDisplay.innerHTML = "";
+
+    const p = document.createElement("p");
+    p.innerText = message;
+    foodDisplay.appendChild(p);
 };
