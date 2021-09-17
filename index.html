@@ -8,6 +8,13 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- custom styles -->
+    <style>
+        .card-text {
+            height: 200px;
+            overflow-y: scroll;
+        }
+    </style>
     <title>Lovely Foods</title>
 </head>
 
@@ -15,13 +22,96 @@
     <h1 class="text-center text-danger my-5">Lovely Foods</h1>
 
     <!-- search box -->
-    <div class="input-group mb-3">
+    <div class="input-group mb-5">
         <input id="search-input" type="text" class="form-control" placeholder="Search for a food here"
             aria-label="Search" aria-describedby="search-button">
         <button class="btn btn-danger" type="button" id="search-button">Search</button>
     </div>
     <!-- search results -->
     <section id="food-display" class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Handi</h5>
+                    <p class="card-text">Take a large pot or wok, big enough to cook all the chicken, and heat the oil
+                        in it. Once the oil is hot, add sliced onion and fry them until deep golden brown. Then take
+                        them out on a plate and set aside.
+                        To the same pot, add the chopped garlic and sauté for a minute. Then add the chopped tomatoes
+                        and cook until tomatoes turn soft. This would take about 5 minutes.
+                        Then return the fried onion to the pot and stir. Add ginger paste and sauté well.
+                        Now add the cumin seeds, half of the coriander seeds and chopped green chillies. Give them a
+                        quick stir.
+                        Next goes in the spices – turmeric powder and red chilli powder. Sauté the spices well for
+                        couple of minutes.
+                        Add the chicken pieces to the wok, season it with salt to taste and cook the chicken covered on
+                        medium-low heat until the chicken is almost cooked through. This would take about 15 minutes.
+                        Slowly sautéing the chicken will enhance the flavor, so do not expedite this step by putting it
+                        on high heat.
+                        When the oil separates from the spices, add the beaten yogurt keeping the heat on lowest so that
+                        the yogurt doesn’t split. Sprinkle the remaining coriander seeds and add half of the dried
+                        fenugreek leaves. Mix well.
+                        Finally add the cream and give a final mix to combine everything well.
+                        Sprinkle the remaining kasuri methi and garam masala and serve the chicken handi hot with naan
+                        or rotis. Enjoy!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza Express Margherita</h5>
+                    <p class="card-text">1 Preheat the oven to 230°C.
+
+                        2 Add the sugar and crumble the fresh yeast into warm water.
+
+                        3 Allow the mixture to stand for 10 – 15 minutes in a warm place (we find a windowsill on a
+                        sunny day works best) until froth develops on the surface.
+
+                        4 Sift the flour and salt into a large mixing bowl, make a well in the middle and pour in the
+                        yeast mixture and olive oil.
+
+                        5 Lightly flour your hands, and slowly mix the ingredients together until they bind.
+
+                        6 Generously dust your surface with flour.
+
+                        7 Throw down the dough and begin kneading for 10 minutes until smooth, silky and soft.
+
+                        8 Place in a lightly oiled, non-stick baking tray (we use a round one, but any shape will do!)
+
+                        9 Spread the passata on top making sure you go to the edge.
+
+                        10 Evenly place the mozzarella (or other cheese) on top, season with the oregano and black
+                        pepper, then drizzle with a little olive oil.
+
+                        11 Cook in the oven for 10 – 12 minutes until the cheese slightly colours.
+
+                        12 When ready, place the basil leaf on top and tuck in!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://www.themealdb.com/images/media/meals/k420tj1585565244.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lamb Tzatziki Burgers</h5>
+                    <p class="card-text">Tip the bulghar into a pan, cover with water and boil for 10 mins. Drain really
+                        well in a sieve, pressing out any excess water.
+
+                        To make the tzatziki, squeeze and discard the juice from the cucumber, then mix into the yogurt
+                        with the chopped mint and a little salt.
+
+                        Work the bulghar into the lamb with the spices, garlic (if using) and seasoning, then shape into
+                        4 burgers. Brush with a little oil and fry or barbecue for about 5 mins each side until cooked
+                        all the way through. Serve in the buns (toasted if you like) with the tzatziki, tomatoes, onion
+                        and a few mint leaves.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- custom script -->
